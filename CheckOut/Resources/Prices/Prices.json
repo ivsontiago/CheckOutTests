@@ -1,0 +1,15 @@
+﻿{
+  "currency": "GBP",
+  "items": {
+    "fruits": [
+      {
+        "name": "Apple",
+        "price": "1"
+      },
+      {
+        "name": "Orange",
+        "price": "0.75"
+      }
+    ]
+  }
+}

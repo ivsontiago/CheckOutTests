@@ -1,0 +1,10 @@
+﻿{
+  "customerId": "0035",
+  "customerName": "Ivson Souza",
+  "selectedItems": {
+    "fruits": {
+      "Oranges": "6",
+      "Apples": "8"
+    }
+  }
+}
