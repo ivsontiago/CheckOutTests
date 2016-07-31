@@ -91,7 +91,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 11
  testRunner.When("I checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 12
- testRunner.Then("the price should be £57.50", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the price should be £24.50", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -127,13 +127,13 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Both Products")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Test Type", "Both Products")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Product 1", "Oranges")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Quantity 1", "50")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Quantity 1", "23")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Product 2", "Apples")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Quantity 2", "20")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Final Price", "57.50")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Quantity 2", "54")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Final Price", "38.15")]
         public virtual void CheckoutRandomCarts_BothProducts()
         {
-            this.CheckoutRandomCarts("Both Products", "Oranges", "50", "Apples", "20", "57.50", ((string[])(null)));
+            this.CheckoutRandomCarts("Both Products", "Oranges", "23", "Apples", "54", "38.15", ((string[])(null)));
 #line hidden
         }
         
@@ -146,10 +146,10 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Quantity 1", "0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Product 2", "Apples")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Quantity 2", "17")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Final Price", "17")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Final Price", "10.20")]
         public virtual void CheckoutRandomCarts_OnlyApples()
         {
-            this.CheckoutRandomCarts("Only Apples", "Oranges", "0", "Apples", "17", "17", ((string[])(null)));
+            this.CheckoutRandomCarts("Only Apples", "Oranges", "0", "Apples", "17", "10.20", ((string[])(null)));
 #line hidden
         }
         
@@ -162,10 +162,10 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Quantity 1", "33")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Product 2", "Apples")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Quantity 2", "0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Final Price", "24.75")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Final Price", "8.25")]
         public virtual void CheckoutRandomCarts_OnlyOranges()
         {
-            this.CheckoutRandomCarts("Only Oranges", "Oranges", "33", "Apples", "0", "24.75", ((string[])(null)));
+            this.CheckoutRandomCarts("Only Oranges", "Oranges", "33", "Apples", "0", "8.25", ((string[])(null)));
 #line hidden
         }
         

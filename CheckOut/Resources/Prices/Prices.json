@@ -4,11 +4,11 @@
     "fruits": [
       {
         "name": "Apple",
-        "price": "1"
+        "price": "0.60"
       },
       {
         "name": "Orange",
-        "price": "0.75"
+        "price": "0.25"
       }
     ]
   }
