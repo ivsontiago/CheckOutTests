@@ -23,9 +23,6 @@ namespace AutomatedTests.Features
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "CheckOutTests.feature"
-#line hidden
-        
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
@@ -74,9 +71,7 @@ namespace AutomatedTests.Features
         public virtual void CheckoutACartFullOfOrangesAndApples()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Checkout a cart full of oranges and apples", ((string[])(null)));
-#line 6
-this.ScenarioSetup(scenarioInfo);
-#line hidden
+            this.ScenarioSetup(scenarioInfo);
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "Product",
                         "Quantity"});
@@ -86,22 +81,16 @@ this.ScenarioSetup(scenarioInfo);
             table1.AddRow(new string[] {
                         "Apples",
                         "20"});
-#line 7
- testRunner.Given("I have the following cart", ((string)(null)), table1, "Given ");
-#line 11
- testRunner.When("I checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
- testRunner.Then("the price should be £24.50", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
+            testRunner.Given("I have the following cart", ((string)(null)), table1, "Given ");
+            testRunner.When("I checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+            testRunner.Then("the price should be £24.50", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
             this.ScenarioCleanup();
         }
         
         public virtual void CheckoutRandomCarts(string testType, string product1, string quantity1, string product2, string quantity2, string finalPrice, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Checkout random carts", exampleTags);
-#line 14
-this.ScenarioSetup(scenarioInfo);
-#line hidden
+            this.ScenarioSetup(scenarioInfo);
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                         "Product",
                         "Quantity"});
@@ -111,13 +100,9 @@ this.ScenarioSetup(scenarioInfo);
             table2.AddRow(new string[] {
                         string.Format("{0}", product2),
                         string.Format("{0}", quantity2)});
-#line 15
- testRunner.Given("I have the following cart", ((string)(null)), table2, "Given ");
-#line 19
- testRunner.When("I checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 20
- testRunner.Then(string.Format("the price should be £{0}", finalPrice), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
+            testRunner.Given("I have the following cart", ((string)(null)), table2, "Given ");
+            testRunner.When("I checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+            testRunner.Then(string.Format("the price should be £{0}", finalPrice), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
             this.ScenarioCleanup();
         }
         
@@ -134,7 +119,6 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckoutRandomCarts_BothProducts()
         {
             this.CheckoutRandomCarts("Both Products", "Oranges", "23", "Apples", "54", "38.15", ((string[])(null)));
-#line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
@@ -150,7 +134,6 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckoutRandomCarts_OnlyApples()
         {
             this.CheckoutRandomCarts("Only Apples", "Oranges", "0", "Apples", "17", "10.20", ((string[])(null)));
-#line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
@@ -166,7 +149,6 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckoutRandomCarts_OnlyOranges()
         {
             this.CheckoutRandomCarts("Only Oranges", "Oranges", "33", "Apples", "0", "8.25", ((string[])(null)));
-#line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
@@ -175,15 +157,10 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckoutUsingAPredefinedCart()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Checkout using a predefined cart", ((string[])(null)));
-#line 27
-this.ScenarioSetup(scenarioInfo);
-#line 28
- testRunner.Given("I am using a random cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 29
- testRunner.When("I checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 30
- testRunner.Then("the price should be calculated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
+            this.ScenarioSetup(scenarioInfo);
+            testRunner.Given("I am using a random cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+            testRunner.When("I checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+            testRunner.Then("the price should be calculated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
             this.ScenarioCleanup();
         }
         
@@ -193,15 +170,10 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckoutAnEmptyCart()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Checkout an empty cart", ((string[])(null)));
-#line 32
-this.ScenarioSetup(scenarioInfo);
-#line 33
- testRunner.Given("my cart is empty", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 34
- testRunner.When("I checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 35
- testRunner.Then("the price should be £0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
+            this.ScenarioSetup(scenarioInfo);
+            testRunner.Given("my cart is empty", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+            testRunner.When("I checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+            testRunner.Then("the price should be £0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
             this.ScenarioCleanup();
         }
     }

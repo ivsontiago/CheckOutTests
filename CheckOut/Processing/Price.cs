@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Reflection;
 using CheckOut.Enums;
-using CheckOut.Fruits;
 using Newtonsoft.Json.Linq;
 
 namespace CheckOut.Processing
@@ -11,18 +10,6 @@ namespace CheckOut.Processing
     {
         public string Currency { get; set; }
         public double Value { get; set; }
-
-        public static double GetPrice<T>(T fruitPrice)
-        {
-            switch (fruitPrice.GetType().Name)
-            {
-                case nameof(Apple):
-                    return 0;
-                case nameof(Orange):
-                    return 0;
-            }
-            return 0;
-        }
 
         public static double GetProductPrice(ProductTypes product)
         {
